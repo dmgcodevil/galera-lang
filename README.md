@@ -8,7 +8,7 @@ A simple programming language for those who don't give a f**k
 
 ## Types
 
-*Type defintion* :  `galera <Type_Name> {  <Name1>, <Name2>, ...  : <Type>  }`
+**Type defintion** :  `galera <Type_Name> {  <Name1>, <Name2>, ...  : <Type>  }`
 
 Example:
 
@@ -26,7 +26,7 @@ _a_ is set to 15, _c- set to 1, _b_ remained initizlied and value equals to zero
 
 
 
-*Function type* : `<Name> ([<Type>]) -> <Type>`
+**Function type** : `<Name> ([<Type>]) -> <Type>`
 
 Example:
 
@@ -49,7 +49,7 @@ foo = Foo{a:1, b:2}
 
 ```
   
-*Namespaces* : `<Name_Space1> { <Name_Space2> { <Type> } }`
+**Namespaces** : `<Name_Space1> { <Name_Space2> { <Type> } }`
 
 Example:
 
@@ -67,7 +67,9 @@ bar = App.Foo.Bar{a:1}
 
 ## Flow control
 
-*Branch* : `(cond) ? { when true } : { else }`
+Should be obvious; no need to explain.
+
+**Branch** : `(cond) ? { when true } : { else }`
 
 Example: 
 
@@ -75,7 +77,7 @@ Example:
 ( a < b ) ? { a + 1 } : { b - 1 }
 ```
 
-*Loop* : `(cond) :: {}`
+**Loop** : `(cond) :: {}`
 
 ```
 i:int = 0
@@ -84,7 +86,7 @@ i:int = 0
 }
 ```
 
-*Foreach* : `(val : arr[]) :: {} `
+**Foreach** : `(val : arr[]) :: {} `
 
 ```
 arr:int[] = { 1, 2, 3, 4, 5 }
