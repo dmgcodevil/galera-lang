@@ -73,11 +73,18 @@ Example:
 ( a < b ) ? { a + 1 } : { b - 1 }
 ```
 
-Loop: `{(cond)} :: {}`
+Loop: `(cond) :: {}`
 
 ```
 i:int = 0
-{ (i < 10) } :: {
+(i < 10) :: {
   i++
 }
+```
+
+Foreach: `(val : arr[]) :: {} `
+
+```
+arr:int[] = { 1, 2, 3, 4, 5 }
+(i : arr) :: { print(i) }
 ```
