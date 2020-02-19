@@ -48,7 +48,7 @@ galera Foo {a,b,c:int, atoi:(string) -> int}
 ```
 Foo {a:15, c:1}
 ```
-_a_ is set to 15, _c- set to 1, _b_ remained initizlied and value equals to zero
+_a_ is set to 15, _c_ set to 1, _b_ remained uninitialized and value equals to zero
 
 
 
