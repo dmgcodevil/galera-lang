@@ -26,7 +26,7 @@ _a_ is set to 15, _c- set to 1, _b_ remained initizlied and value equals to zero
 
 
 
-Function type : `<Name> ([<Type>]) <Type>`
+Function type : `<Name> ([<Type>]) -> <Type>`
 
 Example:
 
@@ -49,3 +49,35 @@ foo = Foo{a:1, b:2}
 
 ```
   
+Namespaces : `<Name_Space1> { <Name_Space2> { <Type> } }`
+
+Example:
+
+```
+galera App {
+  Foo {
+    Bar {
+      a: int
+    }
+  }
+}
+
+bar = App.Foo.Bar{a:1}
+```
+
+Branch: `(cond) ? { when true } : { else }`
+
+Example: 
+
+```
+( a < b ) ? { a + 1 } : { b - 1 }
+```
+
+Loop: `{(cond)} :: {}`
+
+```
+i:int = 0
+{ (i < 10) } :: {
+  i++
+}
+```
