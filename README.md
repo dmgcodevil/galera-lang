@@ -13,9 +13,17 @@ Type defintion:  `galera <Type_Name> {  <Name1>, <Name2>, ...  : <Type>  }`
 Example:
 
 ```
-galera Foo {} // empty class / map
-galera Foo {a,b,c:int, atoi:(string)int}
+galera Foo {} // empty class / map / or whatever you want
+galera Foo {a,b,c:int, atoi:(string) -> int}
 ```
+
+Initialization
+
+```
+galera Foo {a:15, c:1}
+```
+_a_ is set to 15, _c- set to 1, _b_ remained initizlied and value equals to zero
+
 
 
 Function type : `<Name> ([<Type>]) <Type>`
@@ -23,7 +31,7 @@ Function type : `<Name> ([<Type>]) <Type>`
 Example:
 
 ```
-galera  atoi (string) int
+galera  atoi (string) -> int
 ```
 
   
@@ -35,7 +43,7 @@ Example:
 
 ```
 Bar {a:int}
-Foo{b:int} Bar
+Foo Bar {b:int}
 
 foo = Foo{a:1, b:2}
 
