@@ -8,7 +8,7 @@ A simple programming language for those who don't give a f**k
 
 ## Types
 
-Type defintion:  `galera <Type_Name> {  <Name1>, <Name2>, ...  : <Type>  }`
+*Type defintion* :  `galera <Type_Name> {  <Name1>, <Name2>, ...  : <Type>  }`
 
 Example:
 
@@ -17,16 +17,16 @@ galera Foo {} // empty class / map / or whatever you want
 galera Foo {a,b,c:int, atoi:(string) -> int}
 ```
 
-Initialization
+*Initialization* : `<Type> { <field>:<val>, ... } `
 
 ```
-galera Foo {a:15, c:1}
+Foo {a:15, c:1}
 ```
 _a_ is set to 15, _c- set to 1, _b_ remained initizlied and value equals to zero
 
 
 
-Function type : `<Name> ([<Type>]) -> <Type>`
+*Function type* : `<Name> ([<Type>]) -> <Type>`
 
 Example:
 
@@ -49,7 +49,7 @@ foo = Foo{a:1, b:2}
 
 ```
   
-Namespaces : `<Name_Space1> { <Name_Space2> { <Type> } }`
+*Namespaces* : `<Name_Space1> { <Name_Space2> { <Type> } }`
 
 Example:
 
@@ -65,7 +65,9 @@ galera App {
 bar = App.Foo.Bar{a:1}
 ```
 
-Branch: `(cond) ? { when true } : { else }`
+## Flow control
+
+*Branch* : `(cond) ? { when true } : { else }`
 
 Example: 
 
@@ -73,7 +75,7 @@ Example:
 ( a < b ) ? { a + 1 } : { b - 1 }
 ```
 
-Loop: `(cond) :: {}`
+*Loop* : `(cond) :: {}`
 
 ```
 i:int = 0
@@ -82,7 +84,7 @@ i:int = 0
 }
 ```
 
-Foreach: `(val : arr[]) :: {} `
+*Foreach* : `(val : arr[]) :: {} `
 
 ```
 arr:int[] = { 1, 2, 3, 4, 5 }
