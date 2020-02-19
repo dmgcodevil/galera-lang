@@ -3,7 +3,33 @@ A simple programming language for those who don't give a f**k
 
 
 
-# Galera Lang Specification
+# The Galera Programming Language Specification
+
+## Packages
+
+
+Each Galera source file must have `galera` extension and package. The package must be defined at the top of the source file. Package might be documented using `/* */` comment style.
+
+
+```
+PackageClause  = "package" PackageName .
+PackageName    = identifier .
+```
+
+Example:
+
+```
+package 'foo'
+```
+
+```
+/*
+This package contains tools for network programming.
+*/
+package 'net'
+```
+
+
 
 
 ## Types
@@ -92,3 +118,9 @@ i:int = 0
 arr:int[] = { 1, 2, 3, 4, 5 }
 (i : arr) :: { print(i) }
 ```
+
+## Comments
+Comments serve as program documentation. There are two forms:
+
+1. Line comments start with the character sequence // and stop at the end of the line.
+2. General comments start with the character sequence /* and stop with the first subsequent character sequence */.
